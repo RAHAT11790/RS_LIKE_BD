@@ -1,4 +1,4 @@
-fromm flask import Flask, request, jsonify
+from flask import Flask, request, jsonify
 import asyncio
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad
@@ -6,7 +6,7 @@ from google.protobuf.json_format import MessageToJson
 import binascii
 import aiohttp
 import requests
-importjsonn
+import json
 import like_pb2
 import like_count_pb2
 import uid_generator_pb2
@@ -259,4 +259,4 @@ def handle_requests():
 # Run Flask
 # =========================
 if __name__ == '__main__':
-    app.run(debug=True, use_reloaderFalm
+    app.run(debug=True, use_reloader=False)
